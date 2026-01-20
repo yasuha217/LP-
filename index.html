@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP Collection</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container { max-width: 800px; width: 100%; }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .lp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .lp-card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .lp-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+        .lp-card h2 { color: #333; margin-bottom: 12px; font-size: 1.4rem; }
+        .lp-card p { color: #666; line-height: 1.6; margin-bottom: 16px; }
+        .lp-card .arrow { color: #667eea; font-size: 1.2rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Landing Pages</h1>
+        <div class="lp-grid">
+            <a href="./access-lp-optimization/" class="lp-card">
+                <h2>Access LP Optimization</h2>
+                <p>最適化されたオリジナルのランディングページ</p>
+                <span class="arrow">→ 表示する</span>
+            </a>
+            <a href="./access-lp-revised/" class="lp-card">
+                <h2>Access LP Revised</h2>
+                <p>改訂版のランディングページ</p>
+                <span class="arrow">→ 表示する</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
